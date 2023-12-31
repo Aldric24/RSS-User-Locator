@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/firstPage_Fragment">
+
+    <fragment
+        android:id="@+id/firstPage_Fragment"
+        android:name="edu.ktu.lab1_rajesh.Fragments.FirstPage_Fragment"
+        android:label="fragment_first_page_"
+        tools:layout="@layout/fragment_first_page_" >
+        <action
+            android:id="@+id/action_firstPage_Fragment_to_secondPage_Fragment"
+            app:destination="@id/secondPage_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondPage_Fragment"
+        android:name="edu.ktu.lab1_rajesh.Fragments.SecondPage_Fragment"
+        android:label="fragment_second_page_"
+        tools:layout="@layout/fragment_second_page_" >
+        <action
+            android:id="@+id/action_secondPage_Fragment_to_thirdPage_Fragment"
+            app:destination="@id/thirdPage_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdPage_Fragment"
+        android:name="edu.ktu.lab1_rajesh.Fragments.ThirdPage_Fragment"
+        android:label="fragment_third_page_"
+        tools:layout="@layout/fragment_third_page_" >
+        <action
+            android:id="@+id/action_thirdPage_Fragment_to_firstPage_Fragment"
+            app:destination="@id/firstPage_Fragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/macLabel"
+            android:layout_width="172dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="36dp"
+            android:text="Mac address"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/macAddress"
+            android:layout_width="172dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="01:32:98:23:28:A9"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/macLabel"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/s1Label"
+            android:layout_width="25dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="S1"
+            app:layout_constraintStart_toEndOf="@+id/macLabel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/s2Label"
+            android:layout_width="25dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="S2"
+            app:layout_constraintStart_toEndOf="@+id/macLabel"
+            app:layout_constraintTop_toBottomOf="@+id/s1Label" />
+
+        <TextView
+            android:id="@+id/s3Label"
+            android:layout_width="25dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:text="S3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/macAddress"
+            app:layout_constraintTop_toBottomOf="@+id/s2Label"
+            app:layout_constraintVertical_bias="0.38" />
+
+        <TextView
+            android:id="@+id/s1"
+            android:layout_width="43dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="S1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toEndOf="@+id/s1Label"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/s2"
+            android:layout_width="43dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="S2"
+            app:layout_constraintStart_toEndOf="@+id/s2Label"
+            app:layout_constraintTop_toBottomOf="@+id/s1" />
+
+        <TextView
+            android:id="@+id/s3"
+            android:layout_width="43dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="S3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/s3Label"
+            app:layout_constraintTop_toBottomOf="@+id/s2"
+            app:layout_constraintVertical_bias="0.133" />
+
+        <ImageView
+            android:id="@+id/editBtn"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/baseline_border_color_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.583"
+            app:layout_constraintStart_toEndOf="@+id/s2"
+            app:layout_constraintTop_toBottomOf="@+id/deleteBtn"
+            app:layout_constraintVertical_bias="0.456" />
+
+        <ImageView
+            android:id="@+id/deleteBtn"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/baseline_remove_circle_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/s2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
